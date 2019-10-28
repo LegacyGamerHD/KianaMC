@@ -4,6 +4,8 @@ jdk:
   - oraclejdk8
 install: true
 script:
+  - git config --global user.email "wesleyvanneck105@outlook.com"
+  - git config --global user.name "LegacyGamerHD"
   - chmod +x ./scripts/inst.sh
   - ./scripts/inst.sh --setup --remote
 after_success:
