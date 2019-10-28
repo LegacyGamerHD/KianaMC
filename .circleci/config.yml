@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/Akarin-project/Akarin
+    working_directory: ~/LegacyGamerHD/KianaMC
     parallelism: 1
     shell: /bin/bash --login
     environment:
@@ -36,7 +36,7 @@ jobs:
         paths:
         - ~/.m2
     # Test
-    - run: yes|cp -rf ./akarin-*.jar $CIRCLE_ARTIFACTS
+    - run: yes|cp -rf ./KianaMC-*.jar $CIRCLE_ARTIFACTS
     # Teardown
     # Save test results
     - store_test_results:
