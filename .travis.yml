@@ -1,7 +1,7 @@
 language: java
 dist: trust
 jdk:
-  - oraclejdk11
+  - oraclejdk8
 install: true
 script:
   - chmod +x ./scripts/inst.sh
