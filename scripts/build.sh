@@ -8,7 +8,7 @@ paperbasedir="$basedir/work/Paper"
 paperworkdir="$basedir/work/Paper/work"
 
 if [ "$2" == "--setup" ] || [ "$3" == "--setup" ] || [ "$4" == "--setup" ]; then
-	echo "[Akarin] Setup Paper.."
+	echo "[KianaMC] Setup Paper.."
 	(
 		if [ "$2" == "--remote" ] || [ "$3" == "--remote" ] || [ "$4" == "--remote" ]; then
 			cd "$paperworkdir"
@@ -23,14 +23,14 @@ if [ "$2" == "--setup" ] || [ "$3" == "--setup" ] || [ "$4" == "--setup" ]; then
 	)
 fi
 
-echo "[Akarin] Ready to build"
+echo "[KianaMC] Ready to build"
 (
 	cd "$paperbasedir"
-	echo "[Akarin] Touch sources.."
+	echo "[KianaMC] Touch sources.."
 	
 	cd "$paperbasedir"
 	if [ "$2" == "--fast" ] || [ "$3" == "--fast" ] || [ "$4" == "--fast" ]; then
-		echo "[Akarin] Test and repatch has been skipped"
+		echo "[KianaMC] Test and repatch has been skipped"
 		\cp -rf "$basedir/api/src/main" "$paperbasedir/Paper-API/src/"
 		\cp -rf "$basedir/api/pom.xml" "$paperbasedir/Paper-API/"
 		\cp -rf "$basedir/src" "$paperbasedir/Paper-Server/"
@@ -54,8 +54,8 @@ echo "[Akarin] Ready to build"
 	\cp -rf "$rawapi" "$basedir/akarin-api-1.13.2-R0.1-SNAPSHOT.jar"
 	
 	echo ""
-	echo "[Akarin] Build successful"
-	echo "[Akarin] Migrated the final jar to $basedir/"
+	echo "[KianaMC] Build successful"
+	echo "[KianaMC] Migrated the final jar to $basedir/"
 )
 
 )

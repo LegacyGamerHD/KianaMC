@@ -19,14 +19,12 @@ import org.bukkit.configuration.file.YamlConfiguration;
 
 @SuppressWarnings({"UnusedIsStillUsed", "unused"})
 public class AkarinGlobalConfig {
-    private final static Logger LOGGER = Logger.getLogger("Akarin");
+    private final static Logger LOGGER = Logger.getLogger("KianaMC");
     
     private static File CONFIG_FILE;
-    private static final String HEADER = "This is the global configuration file for Akarin.\n"
+    private static final String HEADER = "This is the global configuration file for KianaMC.\n"
             + "Some options may impact gameplay, so use with caution,\n"
             + "and make sure you know what each option does before configuring.\n"
-            + "\n"
-            + "Akarin website: https://akarin.io/ \n";
     /*========================================================================*/
     public static YamlConfiguration config;
     static int version;
@@ -38,7 +36,7 @@ public class AkarinGlobalConfig {
             config.load(CONFIG_FILE);
         } catch (IOException ex) {
         } catch (InvalidConfigurationException ex) {
-            LOGGER.log(Level.SEVERE, "Could not load akarin.yml, please correct your syntax errors");
+            LOGGER.log(Level.SEVERE, "Could not load KianaMC.yml, please correct your syntax errors");
             ex.printStackTrace();
             throw Throwables.propagate(ex);
         }
