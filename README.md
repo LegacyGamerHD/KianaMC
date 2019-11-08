@@ -1,7 +1,7 @@
 # KianaMC
 
 [![Powered by](https://img.shields.io/badge/Powered_by-LegacyGamerHD-ee6aa7.svg?style=flat)]()
-[![Circle CI](https://circleci.com/gh/Akarin-project/Akarin/tree/master.svg?style=svg)](https://circleci.com/gh/LegacyGamerHD/KianaMC)
+[![Circle CI](https://circleci.com/gh/LegacyGamerHD/KianaMC/tree/master.svg?style=svg)](https://circleci.com/gh/LegacyGamerHD/KianaMC)
 
 KianaMC is currently **under heavy development** and contributions are welcome!
 
@@ -45,3 +45,9 @@ Get KianaMC
 Demo Servers
 ---
 * [LoyaltyMC](https://play.loyaltymc.net)
+
+#### Credits
+
+- PaperMC
+- Akarin-project
+

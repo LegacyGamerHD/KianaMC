@@ -37,7 +37,7 @@ jobs:
         paths:
         - ~/.m2
     # Test
-    - run: yes|cp -rf ./KianaMC-*.jar $CIRCLE_ARTIFACTS
+    - run: yes|cp -rf ./KianaMC-1.13.2.jar $CIRCLE_ARTIFACTS
     # Teardown
     # Save test results
     - store_test_results:
