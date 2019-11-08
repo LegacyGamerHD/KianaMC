@@ -24,7 +24,7 @@ public class AkarinGlobalConfig {
     private static File CONFIG_FILE;
     private static final String HEADER = "This is the global configuration file for KianaMC.\n"
             + "Some options may impact gameplay, so use with caution,\n"
-            + "and make sure you know what each option does before configuring.\n"
+            + "and make sure you know what each option does before configuring.\n";
     /*========================================================================*/
     public static YamlConfiguration config;
     static int version;
