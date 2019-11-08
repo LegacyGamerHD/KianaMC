@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/Akarin-project/Akarin
+    working_directory: ~/LegacyGamerHD/KianaMC
     parallelism: 1
     shell: /bin/bash --login
     environment:
@@ -9,14 +9,15 @@ jobs:
       CIRCLE_TEST_REPORTS: /tmp/circleci-test-results
     docker:
     - image: circleci/build-image:ubuntu-14.04-XXL-upstart-1189-5614f37
-      command: /sbin/init
+    # Tempery Fix CircleCI
+      run: sudo service postgresql start
     steps:
     # Machine Setup
     - checkout
     # Prepare for artifact
     - run: mkdir -p $CIRCLE_ARTIFACTS $CIRCLE_TEST_REPORTS
     - run:
-        working_directory: ~/Akarin-project/Akarin
+        working_directory: ~/LegacyGamerHD/KianaMC
         command: sudo update-alternatives --set java /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java; sudo update-alternatives --set javac /usr/lib/jvm/java-8-openjdk-amd64/bin/javac; echo -e "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64" >> $BASH_ENV
     # Dependencies
     # Restore the dependency cache
@@ -36,7 +37,7 @@ jobs:
         paths:
         - ~/.m2
     # Test
-    - run: yes|cp -rf ./akarin-*.jar $CIRCLE_ARTIFACTS
+    - run: yes|cp -rf ./KianaMC-*.jar $CIRCLE_ARTIFACTS
     # Teardown
     # Save test results
     - store_test_results:
