@@ -141,12 +141,12 @@
             <artifactId>annotations</artifactId>
             <version>16.0.1</version>
         </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.16.20</version>
-            <scope>provided</scope>
-        </dependency>
+	<dependency>
+		<groupId>org.projectlombok</groupId>
+		<artifactId>lombok</artifactId>
+		<version>edge-SNAPSHOT</version>
+		<scope>provided</scope>
+	</dependency>
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
@@ -225,6 +225,10 @@
             <id>tu-darmstadt</id>
             <url>https://zoidberg.ukp.informatik.tu-darmstadt.de/artifactory/public-releases/</url>
         </repository>
+			<repository>
+		<id>projectlombok.org</id>
+		<url>https://projectlombok.org/edge-releases</url>
+	  </repository>
     </repositories>
 
     <pluginRepositories>
