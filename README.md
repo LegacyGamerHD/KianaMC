@@ -14,7 +14,7 @@ As a [Paper](https://github.com/PaperMC/Paper) fork, it should support almost al
 Our project has a few key goals:
 
 * **Open Access** - Make more game mechanics configurable.
-* **Bedrock** - Make the server more safe and stable. 
+* **Stable** - Make the server more safe and stable. 
 * **Fast** - Simplify the logic and implement multi-threaded computing.
 
 *Issues and Pull Requests will be labeled accordingly*
