@@ -48,8 +48,8 @@ echo "[KianaMC] Ready to build"
 	fi
 	
 	minecraftversion=$(cat "$paperworkdir/BuildData/info.json" | grep minecraftVersion | cut -d '"' -f 4)
-	rawjar="$paperbasedir/Paper-Server/target/KianaMC-$minecraftversion.jar"
-	\cp -rf "$rawjar" "$basedir/akarin-$minecraftversion.jar"
+	rawjar="$paperbasedir/Paper-Server/target/akarin-$minecraftversion.jar"
+	\cp -rf "$rawjar" "$basedir/KianaMC-$minecraftversion.jar"
 	rawapi="$paperbasedir/Paper-API/target/akarin-api-1.13.2-R0.1-SNAPSHOT.jar"
 	\cp -rf "$rawapi" "$basedir/akarin-api-1.13.2-R0.1-SNAPSHOT.jar"
 	
