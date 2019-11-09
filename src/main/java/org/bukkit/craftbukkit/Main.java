@@ -220,7 +220,7 @@ public class Main {
                     if (buildDate.before(deadline.getTime())) {
                         // Paper start - This is some stupid bullshit
                         System.err.println("*** Warning, you've not updated in a while! ***");
-                        System.err.println("*** Please visit our website for the latest information: https://https://github.com/LegacyGamerHD/KianaMC/ ***"); // Paper // Akarin
+                        System.err.println("*** Please visit our website for the latest information: https://github.com/LegacyGamerHD/KianaMC/ ***"); // Paper // Akarin
                         //System.err.println("*** Server will start in 20 seconds ***");
                         //Thread.sleep(TimeUnit.SECONDS.toMillis(20));
                         // Paper End
