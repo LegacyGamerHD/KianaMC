@@ -8,10 +8,10 @@ paperbasedir="$basedir/work/Paper"
 paperworkdir="$basedir/work/Paper/work"
 
 if [ "$2" == "--setup" ] || [ "$3" == "--setup" ] || [ "$4" == "--setup" ]; then
-	echo "[KianaMC] Setup Paper.."
+	echo "[Akarin] Setup Paper.."
 	(
-        	#cd "$paperbasedir"
-		#./paper patch
+		cd "$paperbasedir"
+		./paper patch
 	)
 fi
 
