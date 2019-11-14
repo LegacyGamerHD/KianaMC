@@ -10,7 +10,6 @@
     <properties>
         <!-- <skipTests>true</skipTests> Paper - This [was] not going to end well -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <api.version>1.14.4-R0.1-SNAPSHOT</api.version> <!-- Akarin -->
         <minecraft.version>1.14.4</minecraft.version>
         <minecraft_version>1_14_R4</minecraft_version>
         <buildtag.prefix>git-Bukkit-</buildtag.prefix>
@@ -21,7 +20,6 @@
     </properties>
 
     <parent>
-        <!-- Akarin - we will replace Paper's pom -->
         <groupId>com.destroystokyo.paper</groupId>
         <artifactId>paper-parent</artifactId>
         <version>dev-SNAPSHOT</version>
@@ -30,11 +28,11 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.destroystokyo.paper</groupId>
-            <artifactId>akarin-api</artifactId>
-            <version>${api.version}</version> <!-- Akarin - allows different implemention version -->
-            <scope>compile</scope>
-        </dependency>
+          <groupId>com.destroystokyo.paper</groupId>
+          <artifactId>paper-api</artifactId>
+         <version>1.14.2-R0.1-SNAPSHOT</version>
+          <scope>provided</scope>
+          </dependency>
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>minecraft-server</artifactId>
@@ -225,10 +223,14 @@
             <id>tu-darmstadt</id>
             <url>https://zoidberg.ukp.informatik.tu-darmstadt.de/artifactory/public-releases/</url>
         </repository>
-			<repository>
-		<id>projectlombok.org</id>
-		<url>https://projectlombok.org/edge-releases</url>
-	  </repository>
+	    <repository>
+             <id>projectlombok.org</id>
+            <url>https://projectlombok.org/edge-releases</url>
+          </repository>
+	    <repository>
+           <id>papermc</id>
+         <url>https://papermc.io/repo/repository/maven-public/</url>
+       </repository>
     </repositories>
 
     <pluginRepositories>
