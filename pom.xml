@@ -10,6 +10,7 @@
     <properties>
         <!-- <skipTests>true</skipTests> Paper - This [was] not going to end well -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <api.version>1.14.2-R0.1-SNAPSHOT</api.version> <!-- Akarin -->
         <minecraft.version>1.14.4</minecraft.version>
         <minecraft_version>1_14_R1</minecraft_version>
         <buildtag.prefix>git-Bukkit-</buildtag.prefix>
@@ -20,6 +21,7 @@
     </properties>
 
     <parent>
+        <!-- Akarin - we will replace Paper's pom -->
         <groupId>com.destroystokyo.paper</groupId>
         <artifactId>paper-parent</artifactId>
         <version>dev-SNAPSHOT</version>
@@ -28,11 +30,11 @@
 
     <dependencies>
         <dependency>
-          <groupId>com.destroystokyo.paper</groupId>
-          <artifactId>paper-api</artifactId>
-         <version>1.14.4-R0.1-SNAPSHOT</version>
-          <scope>provided</scope>
-          </dependency>
+            <groupId>com.destroystokyo.paper</groupId>
+            <artifactId>akarin-api</artifactId>
+            <version>${api.version}</version> <!-- Akarin - allows different implemention version -->
+            <scope>compile</scope>
+        </dependency>
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>minecraft-server</artifactId>
@@ -199,41 +201,33 @@
         <!--
             If you are a plugin developer, please use https://hub.spigotmc.org/nexus/content/repositories/snapshots/
             as your repository URL. This will ensure only Bukkit / Spigot-API are pulled from our Maven repository.
-
             Please see https://www.spigotmc.org/go/maven for more information.
         -->
         <repository>
             <id>spigotmc-public</id>
             <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
         </repository>
-        <!-- Akarin
+        <!-- Akarin -->
         <repository>
             <id>nallar-repo</id>
             <url>https://repo.nallar.me/</url>
         </repository>
-		-->
         <repository>
             <id>spongepowered-repo</id>
             <url>https://repo.spongepowered.org/maven/</url>
         </repository>
-		        <!--
         <repository>
             <id>sonatype-nexusg</id>
             <url>https://oss.sonatype.org/content/repositories</url>
         </repository>
-				-->
         <repository>
             <id>tu-darmstadt</id>
             <url>https://zoidberg.ukp.informatik.tu-darmstadt.de/artifactory/public-releases/</url>
         </repository>
-	    <repository>
-             <id>projectlombok.org</id>
-            <url>https://projectlombok.org/edge-releases</url>
-          </repository>
-	    <repository>
-           <id>papermc</id>
-         <url>https://papermc.io/repo/repository/maven-public/</url>
-       </repository>
+			<repository>
+		<id>projectlombok.org</id>
+		<url>https://projectlombok.org/edge-releases</url>
+	  </repository>
     </repositories>
 
     <pluginRepositories>
