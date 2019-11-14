@@ -11,7 +11,7 @@
         <!-- <skipTests>true</skipTests> Paper - This [was] not going to end well -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <minecraft.version>1.14.4</minecraft.version>
-        <minecraft_version>1_14_R4</minecraft_version>
+        <minecraft_version>1_14_R1</minecraft_version>
         <buildtag.prefix>git-Bukkit-</buildtag.prefix>
         <buildtag.suffix></buildtag.suffix>
         <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
