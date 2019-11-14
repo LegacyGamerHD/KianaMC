@@ -206,11 +206,12 @@
             <id>spigotmc-public</id>
             <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
         </repository>
-        <!-- Akarin -->
+        <!-- Akarin
         <repository>
             <id>nallar-repo</id>
             <url>https://repo.nallar.me/</url>
         </repository>
+		-->
         <repository>
             <id>spongepowered-repo</id>
             <url>https://repo.spongepowered.org/maven/</url>
