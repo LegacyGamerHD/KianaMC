@@ -6,6 +6,8 @@ install: true
 script:
   - git config --global user.email "wesleyvanneck105@outlook.com"
   - git config --global user.name "LegacyGamerHD"
+  - wget https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar
+  - java -jar BuildTools.jar --rev 1.14.4
   - chmod +x ./scripts/inst.sh
   - ./scripts/inst.sh --setup
 after_success:
