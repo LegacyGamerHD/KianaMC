@@ -29,6 +29,8 @@ jobs:
         - v1-dep-
     - run: git config --global user.email "circle@circleci.com"
     - run: git config --global user.name "CircleCI"
+    - run: wget https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar
+    - run: java -jar BuildTools.jar --rev 1.14.4
     - run: chmod +x scripts/inst.sh
     - run: ./scripts/inst.sh --setup
     # Save dependency cache
