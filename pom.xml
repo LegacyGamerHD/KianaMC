@@ -10,7 +10,7 @@
     <properties>
         <!-- <skipTests>true</skipTests> Paper - This [was] not going to end well -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <api.version>1.14.2-R0.1-SNAPSHOT</api.version> <!-- Akarin -->
+      <!--  <api.version>1.14.2-R0.1-SNAPSHOT</api.version> <!-- Akarin -->
         <minecraft.version>1.14.4</minecraft.version>
         <minecraft_version>1_14_R1</minecraft_version>
         <buildtag.prefix>git-Bukkit-</buildtag.prefix>
@@ -28,13 +28,13 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <dependencies>
-        <dependency>
+          <dependencies>
+       <!-- <dependency>
             <groupId>com.destroystokyo.paper</groupId>
             <artifactId>akarin-api</artifactId>
-            <version>${api.version}</version> <!-- Akarin - allows different implemention version -->
-            <scope>compile</scope>
-        </dependency>
+            <version>${api.version}</version>
+	        <scope>compile</scope>
+        </dependency>	-->
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>minecraft-server</artifactId>
