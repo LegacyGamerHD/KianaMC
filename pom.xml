@@ -209,8 +209,8 @@
         </repository>
         <!-- Akarin -->
         <repository>
-            <id>nallar-repo</id>
-            <url>https://repo.nallar.me/</url>
+        <id>papermc</id>
+        <url>https://papermc.io/repo/repository/maven-public/</url>
         </repository>
         <repository>
             <id>spongepowered-repo</id>
