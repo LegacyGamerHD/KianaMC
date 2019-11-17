@@ -218,7 +218,7 @@
         </repository>
         <repository>
             <id>sonatype-nexusg</id>
-            <url>https://oss.sonatype.org/content/repositories</url>
+            <url>https://oss.sonatype.org/content/repositories/releases</url>
         </repository>
         <repository>
             <id>tu-darmstadt</id>
