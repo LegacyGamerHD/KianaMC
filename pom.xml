@@ -217,10 +217,6 @@
             <url>https://repo.spongepowered.org/maven/</url>
         </repository>
         <repository>
-            <id>sonatype-nexusg</id>
-            <url>https://oss.sonatype.org/content/repositories/releases</url>
-        </repository>
-        <repository>
             <id>tu-darmstadt</id>
             <url>https://zoidberg.ukp.informatik.tu-darmstadt.de/artifactory/public-releases/</url>
         </repository>
