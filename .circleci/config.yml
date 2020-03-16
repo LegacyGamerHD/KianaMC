@@ -31,7 +31,7 @@ jobs:
     - run: git submodule update --init --recursive
     - run: chmod -Rv +x scripts/
     - run: ./scripts/build.sh 
-    - run: ./scripts/inst.sh --setup --remote
+    - run: ./scripts/inst.sh --setup
     # Save dependency cache
     - save_cache:
         key: v1-dep-{{ .Branch }}-{{ epoch }}
